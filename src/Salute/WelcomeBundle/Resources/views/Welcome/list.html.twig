@@ -3,11 +3,10 @@
      <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" />
  {% endblock %}
  {% block body %}
-     <h2>Welcome {{ name }}!</h2>
-     <h3>Odd or Even</h3>
-     {% if division == 0 %}
-         {{ number }} is even.
-     {% else %}
-         {{ number }} is odd.
-     {% endif %}
+     <h3>Belated samurais:</h3>
+     <ul>
+         {% for item in items %}
+             <li>{{ item }}</li>
+         {% endfor %}
+     </ul>
  {% endblock %}
