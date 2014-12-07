@@ -8,7 +8,7 @@ use Salute\WelcomeBundle\Entity\AdvancedPhp;
 use Symfony\Component\HttpFoundation\Response;
 
 class WelcomeController extends Controller
-{
+{//made changes only for creating new branch homeWork3
     public function indexAction($name)
     {
         $number = rand(1, 30);
