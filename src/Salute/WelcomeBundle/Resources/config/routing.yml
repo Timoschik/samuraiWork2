@@ -1,3 +1,27 @@
 welcome:
     pattern:  /welcome/{name}
     defaults: { _controller: SaluteWelcomeBundle:Welcome:index }
+
+list:
+    pattern: /list
+    defaults: {_controller: SaluteWelcomeBundle:Welcome:list }
+
+create:
+    pattern: /create
+    defaults: {_controller: SaluteWelcomeBundle:Welcome:create }
+
+show:
+    pattern:  /show
+    defaults: {_controller: SaluteWelcomeBundle:Welcome:show }
+
+update:
+    pattern:  /update/{id}
+    defaults: {_controller:SaluteWelcomeBundle:Welcome:update }
+
+new-task:
+    pattern: /new-task
+    defaults: {_controller:SaluteWelcomeBundle:Welcome:task}
+
+success:
+    pattern: /success
+    defaults: {_controller:SaluteWelcomeBundle:Welcome:successForm}

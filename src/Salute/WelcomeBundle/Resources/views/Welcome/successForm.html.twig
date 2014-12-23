@@ -1,0 +1,10 @@
+{% extends '::base.html.twig' %}
+    {% block stylesheets %}
+        <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" />
+    {% endblock %}
+{% block body %}
+    <h2>Task added successfully</h2>
+    {% for flashMessage in app.session.flashbag.get('message') %}
+        <p>{{ flashMessage }}</p>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,6 @@
+Salute\WelcomeBundle\Entity\Task:
+  propeties:
+    Task:
+      -NotBlank: ~
+    dueDate:
+      -Type: \DataTime

@@ -1,0 +1,3 @@
+services:
+  list:
+    class:        Salute\WelcomeBundle\Manager\SamuraiManager

@@ -1,0 +1,26 @@
+{% extends '::base.html.twig' %}
+    {% block stylesheets %}
+        <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" />
+    {% endblock %}
+{% block body %}
+<form method="post" {{ form_enctype(form) }} action="{{ path('new-task') }}">
+    {{ form_errors(form) }}
+
+    <div>
+        {{ form_label(form.task, '') }}
+        {{ form_errors(form.task) }}
+        {{ form_widget(form.task, {'attr' : {'class' : 'fyi'}}) }}
+    </div>
+    <div>
+        {{ form_row(form.priority.value) }}
+    </div>
+    <div>
+        {{ form_label(form.dueDate) }}
+        {{ form_errors(form.dueDate) }}
+        {{ form_widget(form.dueDate) }}
+    </div>
+
+    {{ form_rest(form) }}
+    <input type="submit">
+</form>
+{% endblock %}
