@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+ {% block stylesheets %}
+     <link href="{{ asset('css/style.css') }}" type="text/css" rel="stylesheet" />
+ {% endblock %}
+ {% block body %}
+     <h3>Belated samurais:</h3>
+     <ul>
+         {% for item in items %}
+             <li>{{ item }}</li>
+         {% endfor %}
+     </ul>
+ {% endblock %}

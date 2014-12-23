@@ -1,0 +1,3 @@
+salute_welcome:
+    resource: "@SaluteWelcomeBundle/Resources/config/routing.yml"
+    prefix:   /
